@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MAIN GAME LOOP 
+while playerScore < 5 and cpuScore < 5: 
+    print(f""{Amir} you have {playerScore} points.nThe cpu has {cpuScore}) 
+    playerChoice = input("Please enter rock, paper, or scrissors amd press enter.\n")
+
+
+
