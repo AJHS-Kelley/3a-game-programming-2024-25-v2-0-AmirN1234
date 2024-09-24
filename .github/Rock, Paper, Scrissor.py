@@ -27,8 +27,8 @@ else:
 
 # THE RULES using MULTI-LINE STRINGS 
 print(f"")
-Welcome, {AmirNorflett} 
- 
+Welcome, {AmirNorflett} to the Rock, Paper, Scissors
+It's Time to Play
 
 
 
@@ -63,7 +63,7 @@ else:
     print(f"You have chosen {playerChoice}.\n")
 
 # let cpu select choice at random
- cpuChoice = random.randint(0, 2) # randomly select 0, 1, 2.   
+cpuChoice = random.randint(0, 2) # randomly select 0, 1, 2.   
 if cpuChoice == 0:
     cpuChoice = "rock"
 elif cpuChoice == 1:
