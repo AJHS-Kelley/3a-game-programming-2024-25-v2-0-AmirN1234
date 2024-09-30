@@ -27,8 +27,8 @@ else:
 
 # THE RULES using MULTI-LINE STRINGS 
 print(f"")
-Welcome, {AmirNorflett} to the Rock, Paper, Scissors
-It's Time to Play
+Welcome, {AmirNorflett} to the Rock, Paper, Scissors Robot!
+It
 
 
 
