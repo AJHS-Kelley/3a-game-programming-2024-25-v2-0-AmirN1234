@@ -9,25 +9,25 @@ playerName = "Test Player"
 playerChoice = None
 
 # DATA STRCUTURES -- CPU
-cpuScroe = 0 
+cpuScore = 0 
 cpuChoice = None
 
 # PLAYER NAME INPUT
 playerName = input("Amir Norflett.\n")
-print(f"Hello {AmirNorflett}!.\n")
+print(f"Hello {playerName}!.\n")
 isCorrect = input ("Is that Correct?  Type yes or no and press enter.\n")
 
 # .lower() can turn all input into lowercase
 # .upper() can turn all input into UPPERcase
 
 if isCorrect == "yes":
-    print(f"Ok {AmirNorflett}, let's play Rock, Paper, Scissor!.\n")    
+    print(f"Ok {playerName}, let's play Rock, Paper, Scissor!.\n")    
 else: 
     Amir = input("AmirNorflett.\n")
 
 # THE RULES using MULTI-LINE STRINGS 
 print(f"")
-Welcome, {AmirNorflett} to the Rock, Paper, Scissors Robot!
+Welcome, {playerName} to the Rock, Paper, Scissors Robot!
 It
 
 
@@ -97,6 +97,12 @@ elif # PLAYER CHOOSE SCISSORS, CPU CHOOSE ROCK:
     # CPU WINS 
 
 
+elif playerChoice == "Scissors" and cpuChoice == "Scissors":
+    # DRAW
+    print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+    print("It's a draw!\n")
+elif playerChoice == "paper" and cpuChoice == "rock":
+    # PLAYER WINS
 
 
 
@@ -114,29 +120,11 @@ elif # PLAYER CHOOSE SCISSORS, CPU CHOOSE ROCK:
 
 
 
-
-
-
-
-
-
-
-
-
-print 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f"Your Final Score: {playerScore}\nCPU Final Score: {cpuScore}\n")
+if playerScore > cpuScore: 
+    print(f"Congratulations {playerName}, a winner is you!\n")
+elif cpuScore > playerScore:
+    print(f"The CPU wins. You are a disappointment to all.\n")
+else:
+    print("Unable to determine a winner.\nPlease restart.\n")
+    exit()
