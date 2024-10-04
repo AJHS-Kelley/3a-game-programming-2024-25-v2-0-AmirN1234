@@ -26,28 +26,25 @@ else:
     Amir = input("AmirNorflett.\n")
 
 # THE RULES using MULTI-LINE STRINGS 
-print(f"")
+print(f"""
 Welcome, {playerName} to the Rock, Paper, Scissors Robot!
-It
+It's Time To Play Rock, Paper, Scissors!
 
+You will play against CPU. The first player to score 5 points wins.
+You will select from ROCK, PAPER, SCISSOR.
+The CPU will select ROCK, PAPER, or SCISSORS at random.
 
+1) ROCK BEATS SCISSORS
+2) SCISSORS BEATS PAPER
+3) PAPER BEATS ROCK
+""")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# MULTI-LINE STRINGS CAN BE USED AS BIG COMMENTS 
+"""
+Anything in between the sets od double-quotes is just ignored.
+If you need to write large comments, it's easier to use multi-line strings than 
+putting a # in front of 15 different lines.
+"""
 
 # MAIN GAME LOOP 
 while playerScore < 5 and cpuScore < 5: 
