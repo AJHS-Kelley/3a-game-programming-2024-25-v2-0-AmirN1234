@@ -19,7 +19,6 @@ loopsReq = input("How many loops do you want?\nEnter an integer, no commas, and 
 rpsTimeStart = time.time() # returns the number of seconds since Jan. 01, 1970 @ 12:00AM
 while loopCount < loopsReq: 
 
-
 # let cpu select choice at random
  cpuChoice = random.randint(0, 2) # randomly select 0, 1, 2.   
 if cpuChoice == 0:
