@@ -20,7 +20,8 @@ for eachFruit in Fruits:
 # continue Keyword -- Skips the current iteration and then finishes the loop
 fruits = ["apple","banana","strawberry","tomato"]
 for eachFruit in fruits:
-    if eachFruit == "banana"
+    if eachFruit == "banana
+    "
        continue 
     print(eachFruit) 
 
