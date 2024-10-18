@@ -1,5 +1,6 @@
 # Awarding Extra Lives, Amir Norflett, v0.0
 
+# project not finished. 
 
 lives = 3
 
