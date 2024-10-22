@@ -74,4 +74,69 @@ def cpuChoice() -> str:
         exit()
     return cpuChoice
 
+def pickwinner(playerChoice: str, cpuChice: str) -> str:
+    """Determines the winner using player and cpu choices."""
+    if playerChoice == "rock" and cpuChoice == "paper":
+        # CPU WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("The CPU wins a point.\n")
+        cpuScore += 1
+        return "CPU Wins"
+    elif playerChoice == "rock" and cpuChoice == "scissors":
+        # PLAYER WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("You win a point.\n")
+        playerScore += 1 
+        return "Player Wins"
+    elif playerChoice == "rock" and cpuChoice == "rock":
+        # DRAW
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("It's a draw!\n")
+        return "Draw"
+    elif playerChoice == "scissors" and cpuChoice == "rock":
+        # CPU WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("The CPU wins a point.\n")
+        cpuScore += 1 
+        return "CPU Wins"
+    elif playerChoice == "scissors" and cpuChoice == "paper":
+        # PLAYER WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("You win a point.\n")
+        playerScore += 1 
+        return "Player Wins"
+    elif playerChoice == "scissors" and cpuChoice == "scissors":
+        # DRAW 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("It's a draw!\n")
+        return "Draw"
+    elif playerChoice == "paper" and cpuChoice == "rock":
+        # PLAYER WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("You win a point.\n")
+        playerScore += 1
+        return "Player Wins"
+    elif playerChoice == "paper" and cpuChoice == "paper":
+        # DRAW
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("It's a draw!\n")
+        return "Draw"
+    elif playerChoice == "paper" and cpuChoice == "scissors":
+        # CPU WINS 
+        print(f"The CPU chose {cpuChoice} and you chose {playerChoice}.\n")
+        print("The CPU wins a point.\n")
+        cpuScore += 1 
+        return "CPU Wins"
+    else:
+        # CPU WINS 
+        exit()
 
+def score(winner: str) -> int:
+    """This function uses the winner to update the score for CPU, Num. DRAWS, and player score."""
+
+
+
+
+
+        
+   return score 
