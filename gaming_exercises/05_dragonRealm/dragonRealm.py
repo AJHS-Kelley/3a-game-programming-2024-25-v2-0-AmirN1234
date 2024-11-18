@@ -1,8 +1,26 @@
 # Dragon Realm, <STUDENT_NAME>, v0.0
 # Based on https://inventwithpython.com/chapter6.html by Al Sweigart
 
+# MODULE IMPORTS
 import random
 import time
+import datetime 
+
+# SAVING DATA TO A FILE 
+# STEP 1 -- Create the file name to use.
+logFileName = "dragonRealmLog" + str(time.time()) + "txt."
+# Example:  dragonRealmLog1132AM.txt
+
+# STEP 2 -- Create / Open the file to save the data
+saveData = open(logFileName, "x")
+# FILE MODES 
+# "x" CREATES FILE, IF FILE EXISTS, EXIT WITH ERROR MESSAGE 
+# "w" CREATES FILE, IF THE FILE EXISTS, ERASE AND OVERWRITE FILE CONTENTS 
+# "a" CREATES FILE, IF THE FILE EXISTS, APPEND DATA TO THE FILE 
+
+
+saveData.write("GAME STARTED" + " " + str(datetime.datetime.now())+ "\n")
+
 
 def displayIntro():
 
@@ -25,7 +43,7 @@ def checkCave(chosenCave):
     print('It is dark and spooky...')
     time.sleep(2)
     print('A large dragon jumps out in front of you! He opens his jaws and...')
-    print()
+    
     time.sleep(2)
 
     friendlyCave = random.randint(1, 2)
