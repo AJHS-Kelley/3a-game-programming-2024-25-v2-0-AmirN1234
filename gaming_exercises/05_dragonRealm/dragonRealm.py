@@ -1,5 +1,7 @@
 # Dragon Realm, <STUDENT_NAME>, v0.0
 # Based on https://inventwithpython.com/chapter6.html by Al Sweigart
+# You are behind and I am concerned you will not finish by the due date. 
+# There has been almost no new code added to the project. 
 
 # MODULE IMPORTS
 import random
