@@ -2,6 +2,7 @@
 # Based on https://inventwithpython.com/chapter6.html by Al Sweigart
 # You are behind and I am concerned you will not finish by the due date. 
 # There has been almost no new code added to the project. 
+# 2024-12-09 -- You have added some code, but the project is not finished.  You have until 2024-12-16 @ 3:00PM to resubmit. 
 
 # MODULE IMPORTS
 import random
